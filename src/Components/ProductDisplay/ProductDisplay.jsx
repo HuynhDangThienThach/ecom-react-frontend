@@ -31,10 +31,10 @@ const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right-prices">
           <div className="productdisplay-right-price-old">
-            ${product.old_price}
+            {(product.old_price * 1000).toLocaleString()} đồng
           </div>
           <div className="productdisplay-right-price-new">
-            ${product.new_price}
+            {(product.new_price * 1000).toLocaleString()} đồng
           </div>
         </div>
         <div className="productdisplay-right-description">
@@ -54,12 +54,8 @@ const ProductDisplay = (props) => {
         </div>
         <button onClick={() =>{addToCart(product.id)}}>ADD TO CART</button>
         <p className="productdisplay-right-category">
-          <span>Category :</span>
-          Women, T-Shirt, Crop Top
-        </p>
-        <p className="productdisplay-right-category">
-          <span>Tags :</span>
-          Modern, Latest
+          <span>Category : </span>
+          {product.category}
         </p>
       </div>
     </div>

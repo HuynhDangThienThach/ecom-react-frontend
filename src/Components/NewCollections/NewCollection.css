@@ -24,6 +24,18 @@
     margin-top: 50px;
     gap: 30px;
 }
+.item-highlight {
+    background: linear-gradient(180deg, #527bd4, #7bee9d22 60%);
+    /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng */
+}
+.item-highlightt {
+    background: linear-gradient(180deg, #52d472, #ee967b22 60%);
+    /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng */
+}
 @media(max-width: 1280px) {
 
     .new-collections h1 {

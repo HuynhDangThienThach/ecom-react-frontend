@@ -1,21 +1,29 @@
 .item{
     width: 280px;
 }
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
 .item img{
     width: 280px;
 }
 .item p{
     margin: 6px 0px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .item-prices{
     display: flex;
     gap: 20px;
 }
-.item-prices-new{
-    color: #374151;
+.item-price-new{
+    color: #df1620;
     font-size: 18px;
-    font-weight: 600;
-}.item-prices-old{
+    font-weight: bold;
+
+}
+.item-price-old{
     color: #8c8c8c;
     font-size: 18px;
     font-weight: 500;
