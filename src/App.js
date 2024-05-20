@@ -9,20 +9,26 @@ import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
+import banner_nc from './Components/Assets/banner_nc.png'
 import kid_banner from './Components/Assets/banner_kids.png'
+import Success from './Components/Success/Success'
+import Cancel from './Components/Cancel/Cancel'
 function App() {
   return (
-    <div>
+    <div className='bg'>
       <BrowserRouter>
         <Navbar/>
         <Routes>
           <Route path='/' element = {<Shop/>}/>
-          <Route path='/mens' element = {<ShopCategory banner={men_banner} category="men"/>}/>
-          <Route path='/womens' element = {<ShopCategory banner={women_banner} category="women"/>}/>
-          <Route path='/kids' element = {<ShopCategory banner={kid_banner} category="kid" />}/>
+          <Route path='/giadungbeps' element = {<ShopCategory banner={men_banner} category="giadungbep"/>}/>
+          <Route path='/thietbibeps' element = {<ShopCategory banner={women_banner} category="thietbibep"/>}/>
+          <Route path='/thietbiphongs' element = {<ShopCategory banner={kid_banner} category="thietbiphong" />}/>
+          <Route path='/noichaos' element = {<ShopCategory banner={banner_nc} category="noichao" />}/>
           <Route path='/product' element = {<Product/>}>
             <Route path=':productId' element = {<Product/>}/>
           </Route>
+          <Route path='/success' element={<Success/>}></Route>
+          <Route path='/cancel' element={<Cancel/>}></Route>
           <Route path='/cart' element = {<Cart/>}/>
           <Route path='/login' element = {<LoginSignup/>}/>
         </Routes>
